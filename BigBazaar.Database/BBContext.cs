@@ -8,7 +8,7 @@ using BigBazaar.Entities;
 
 namespace BigBazaar.Database
 {
-    public class BBContext : DbContext 
+    public class BBContext : DbContext, IDisposable
     {
         public BBContext(): base("BigBazaarConnection")
         {
