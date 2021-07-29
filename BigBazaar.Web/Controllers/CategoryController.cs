@@ -10,7 +10,7 @@ namespace BigBazaar.Web.Controllers
 {
     public class CategoryController : Controller
     {
-        CategoriesServices categoryService = new CategoriesServices();
+        CategoriesService categoryService = new CategoriesService();
 
         [HttpGet]
         public ActionResult Index()
@@ -31,7 +31,7 @@ namespace BigBazaar.Web.Controllers
         {
             categoryService.SaveCategory(category);
 
-            return View();
+            return RedirectToAction("Index");
         }
 
         [HttpGet]

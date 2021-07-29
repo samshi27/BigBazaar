@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BigBazaar.Services
 {
-    public class CategoriesServices
+    public class CategoriesService
     {
         public Category GetCategory(int ID)
         {
